@@ -29,7 +29,7 @@ setInterval(function(){
         const secondsToEvent = Math.floor(((((timeStampEvent-timeStampNow)%dayInMS)%hourInMS)%minInMS)/secInMS);
         
         document.getElementById('counter').innerHTML = `Faltam apenas <br> ${daysToEvent} dias, ${hoursToEvent} horas, ${minutesToEvent} minutos e ${secondsToEvent} segundos<br>
-                                                            para a maior comemoração do ano!`
+                                                            para comemorarmos juntos meu aniversário!`
         
     }
     }, 1000);
