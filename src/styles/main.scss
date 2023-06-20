@@ -1,0 +1,21 @@
+@use 'hero';
+@use 'contents/button.scss';
+@use 'event';
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    font-size: 18px;
+}
+
+.container{
+    max-width: 960px;
+    width: 100%;
+    margin: auto;
+
+    @media (max-width: 640px) {
+        width: 90%;
+    }
+}

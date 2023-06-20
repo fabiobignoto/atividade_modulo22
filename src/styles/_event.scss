@@ -1,0 +1,49 @@
+@use 'variables';
+
+.event{
+    padding: 40px;
+
+    .container{
+        display: flex;
+        align-items: center;
+        gap: 32px
+    }
+
+    &__title{
+        text-align: center;
+        padding-bottom: 16px;
+    }
+
+    &--image-left{
+        flex-direction: row-reverse;
+    }
+
+    &--firstDetail {
+        background-image: linear-gradient(variables.$firstStep, variables.$secondStep);
+    }
+
+    &--secondDetail {
+        background-image: linear-gradient(variables.$secondStep, variables.$thirdStep);
+    }
+
+    &--thirdDetail {
+        background-image: linear-gradient(variables.$thirdStep, variables.$fourthStep);
+    }
+
+    &--fourthDetail {
+        background-image: linear-gradient(variables.$fourthStep, variables.$fifthStep);
+    }
+
+    &__image{
+        border: 2px inset red;
+        border-radius: 10px;
+        width: 100%;
+    }
+
+    @media (max-width: 640px) {
+        .container{
+            flex-direction: column;
+        }
+    }
+
+}

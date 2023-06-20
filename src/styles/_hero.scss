@@ -1,0 +1,89 @@
+@use 'variables';
+
+.hero{
+    background-image: url(/src/images/fireworks_1496129.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    position: relative;
+
+
+    padding: 60px;
+
+    .container {
+        margin-top: 40px;
+        position: relative;
+
+    }
+
+    &::before{
+        background-color:#013e3d;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        content: '';
+        opacity: .6;
+    }
+
+    &__title{
+        padding: 16px;
+        text-align: center;
+        color: variables.$titleColor;
+        font-size: 42px;
+        margin-bottom: 40px;
+
+
+    }
+
+    &__details{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin: 40px auto;
+        
+        width: 100%;
+        padding: 24px;
+        gap: 40px;
+
+
+        border-radius: 4px;
+        background-color: whitesmoke;
+
+        box-shadow: red;
+        
+        &__list{
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+
+            &__item{
+                b{
+                    text-transform: uppercase;
+                    margin-bottom: 8px;
+                    display: block;
+                }
+            }
+        }
+    }
+
+    @media (max-width: 640px) {
+        &__title{
+            font-size: 20px;
+            padding: 0;
+        }
+
+        &__details{
+            flex-direction: column;
+
+            &__list{
+                text-align: center;
+                flex-direction: column;
+                gap: 20px;
+
+            }
+        }
+        
+    }
+}

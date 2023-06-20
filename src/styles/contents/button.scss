@@ -1,0 +1,29 @@
+.btn {
+    background-color: darkblue;
+    color: #ddd;
+    text-align: center;
+    padding: 8px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 700;
+    letter-spacing: 1px;
+
+    &:hover{
+        background-color: lightgreen;
+        color: darkblue;
+        transition: all ease .5s;
+    }
+
+    &--disabled {
+        background-color: lightblue;
+        color: black;
+        text-decoration: line-through;
+        cursor: not-allowed;
+
+        &:hover{
+            background-color: lightblue;
+            color: black;
+        }
+
+    }
+}
